@@ -97,7 +97,7 @@
 .send {
     position: absolute;
     right: 1.5rem;
-    bottom: 1.2rem;
+    bottom: 1.5rem;
     cursor: pointer;
 }
 
@@ -126,6 +126,6 @@
 
     .send {
         right: 1.5rem;
-        bottom: 2rem;
+        bottom: 2.5rem;
     }
 }
