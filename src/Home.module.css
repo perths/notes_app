@@ -1,0 +1,79 @@
+:root {
+  --violet: #b38bfa;
+  --orange: #f19576;
+  --teal: #43e6fc;
+  --blue: #e8e8e8;
+  --dark-blue: #0047ff;
+  --fade-blue: #6691ff;
+  --pink: #ff79f2;
+  --desert: #f7ecdc;
+  --gray-400: #9a9a9a;
+  --gray-300: #cccccc;
+  --gray: #979797;
+  --shadow: #2f2f2fbf;
+  --slate-dark: #292929;
+  --slate-darker: #353535;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.main-app {
+  display: flex;
+}
+
+.mobile-view {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.desktop-view {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #0000004d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e48f8f;
+  outline: 1px solid #9dbcda;
+}
+
+@media screen and (min-width:750px) {
+
+  .mobile-view {
+    display: none;
+  }
+
+  .desktop-view {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .create-notes {
+    width: 25%;
+  }
+
+  .notes {
+    width: 75%;
+  }
+}

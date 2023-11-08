@@ -1,0 +1,32 @@
+.create-notes {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-height: 32vh;
+}
+
+.title {
+    font-size: 2.4rem;
+    margin: 1.5rem;
+}
+
+.create-group-btn {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    background-color: black;
+    border-radius: 27px;
+    padding: 0.9rem 2.3rem;
+    gap: 1rem;
+    justify-content: center;
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
+}
+
+@media screen and (min-width: 750px) {
+    .create-group-btn {
+        font-size: clamp(1rem, 4.5vw, 1.3rem);
+    }
+}

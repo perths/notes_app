@@ -1,0 +1,172 @@
+.violet {
+    background-color: var(--violet);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.teal {
+    background-color: var(--teal);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.blue-dark {
+    background-color: var(--dark-blue);
+}
+
+.blue-fade {
+    background-color: var(--fade-blue);
+}
+
+.error-msg {
+    color: red;
+    font-weight: 400;
+    margin: 0.2rem 0;
+    margin-right: auto;
+
+}
+
+.color-error {
+    margin-left: 0.1rem;
+}
+
+.color-circles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-options {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.overlay {
+    background-color: var(--shadow);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.container {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+}
+
+.group-name {
+    width: 32%;
+}
+
+.group-color {
+    width: 25%;
+}
+
+.input-section {
+    width: 100%;
+}
+
+.input-error {
+    flex-direction: column;
+}
+
+.add-margin {
+    margin-top: 2.5rem;
+}
+
+.add-border {
+    border: 3.5px solid #312626;
+}
+
+.container div input {
+    border-radius: 15px;
+    border: 1px solid var(--gray-300);
+    padding: 1.2rem;
+    height: 15px;
+    width: 100%;
+}
+
+.container button {
+    background-color: black;
+    margin-top: 2rem;
+    color: white;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    padding: 0.5rem 3rem;
+    border-radius: 6px;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.circle {
+    width: clamp(1.2rem, 3vw, 2.5rem);
+    height: clamp(1.2rem, 3vw, 2.5rem);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 750px) {
+    .container {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .container div input {
+        width: 100%;
+    }
+
+    .container button {
+        margin-left: auto;
+        border-radius: 11px;
+        margin-right: 0;
+    }
+
+    .group-name {
+        width: 22%;
+    }
+
+    .group-color {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .options {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 70%;
+    }
+}
